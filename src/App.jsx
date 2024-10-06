@@ -5,7 +5,7 @@ import { generateSudoku } from "./generateSudoku";
 
 const Modal = ({ finalTime, onClose }) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold text-green-600">Congratulations!</h2>
         <p className="mt-4 text-gray-700">

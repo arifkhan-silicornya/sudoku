@@ -45,7 +45,7 @@ const SudokuBoard = ({
   }, [selectedCell, setSelectedCell]);
 
   return (
-    <div className="grid grid-cols-9 bg-gray-200 p-4 rounded-lg shadow-lg w-full max-w-[460px] mx-auto">
+    <div className="grid grid-cols-9 bg-gray-200 p-4 rounded-lg shadow-lg w-full max-w-[420px] md:max-w-[440px] lg:max-w-[460px] mx-auto">
       {board.map((row, rowIndex) => (
         <React.Fragment key={rowIndex}>
           {row.map((cell, colIndex) => {
@@ -68,7 +68,7 @@ const SudokuBoard = ({
             return (
               <div
                 key={colIndex}
-                className={`flex justify-center items-center h-12 w-12 border border-gray-400 text-xl font-bold cursor-pointer
+                className={`flex justify-center items-center h-8 w-8 lg:h-12 lg:w-12 border border-gray-400 text-xl font-bold cursor-pointer
                 ${cell === 0 ? " bg-white text-blue-600 " : " bg-gray-300 "}
                 ${!isValid ? " bg-red-500 text-white " : " text-black "}
                 ${isSelected ? " bg-yellow-300 " : ""}
