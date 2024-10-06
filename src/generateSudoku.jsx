@@ -12,7 +12,7 @@ export const generateSudoku = (difficulty) => {
   // Depending on difficulty, remove numbers to create a puzzle
   let numbersToKeep;
   if (difficulty === "easy") {
-    numbersToKeep = getRandomInt(79, 80);
+    numbersToKeep = getRandomInt(39, 45);
   } else if (difficulty === "medium") {
     numbersToKeep = getRandomInt(34, 38);
   } else {
