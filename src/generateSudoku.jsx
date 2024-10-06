@@ -16,7 +16,7 @@ export const generateSudoku = (difficulty) => {
   } else if (difficulty === "medium") {
     numbersToKeep = getRandomInt(34, 38);
   } else {
-    numbersToKeep = getRandomInt(30, 31);
+    numbersToKeep = getRandomInt(29, 30);
   }
 
   return removeNumbers(board, numbersToKeep); // function to remove numbers from solved board

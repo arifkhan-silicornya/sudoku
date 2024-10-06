@@ -170,7 +170,7 @@ const App = () => {
       )}
 
       {!gameStarted && !firstLoad && (
-        <div className="absolute z-20 w-full inset-0 bg-[url('/texture.jpg')] bg-cover bg-center  opacity-30"></div>
+        <div className="absolute z-20 w-full inset-0 bg-[url('/texture.webp')] bg-cover bg-center  opacity-30"></div>
       )}
       {!gameStarted && !firstLoad && (
         <div className="absolute z-40">
